@@ -1,0 +1,155 @@
+html {
+    	height:100%;
+    	width:100%;
+    }
+	body {
+		margin:0;
+		padding:0;
+		width:100%;
+    	height:100%;   	
+	}
+/*公共样式*/
+.wrapper{width: 100%; height: 100%; display: block;}
+.layer
+{display: none;
+ position: relative;
+ overflow: hidden; 
+ width: 100%; 
+ height: 100%;}
+.layer1
+{display: block;
+ position: relative;
+ overflow: hidden; 
+ width: 100%; 
+ height: 100%;}
+
+/*音乐*/
+
+.musicon{
+	   width:38px;
+		height:38px;
+		background-size:100% 100%;
+		position:absolute;
+		right: 17px;
+        top: 8%;
+		z-index: 4;
+    -webkit-animation: xuanzhuan 2s linear infinite;
+	}
+.musicoff{
+  display: none;
+     width:38px;
+    height:38px;
+    background-size:100% 100%;
+    position:absolute;
+    right: 17px;
+        top: 8%;
+    z-index: 4
+  }
+
+
+
+  .anslist{ position: absolute;left: 0%; top: 3%; }  
+  .anslist li{padding-bottom:20px; position: relative; }
+
+  .snowgrounp{ position: relative;left: -0.7%; top: -4%; }
+  .snowgrounp li{padding-bottom:0px; position: relative; }
+
+ul li{list-style: none;}
+
+.chose span{ position: absolute; width: 60px; height: 60px; left:20px; top:0px; background-size: 100% 100%; display: block;}
+.selected span{ position: absolute; width: 30px; height: 30px; left:-5px; top:-0.5rem; background-image: url(../images/p2-5.png); background-size: 100% 100%; display: block;z-index: 5}
+.right span{ position: absolute; width: 30px; height: 30px; left:-5px; top:0px; background-image: url(../images/p2-4.png); background-size: 100% 100%; display: block;}
+
+
+/* 各个页面的样式 */
+.layer2{ background-image: url(../images/q1-bg.jpg); background-size: 100% 100%;}
+.layer3{ background-image: url(../images/q2-bg.jpg); background-size: 100% 100%;}
+.layer4{ background-image: url(../images/q3-bg.jpg); background-size: 100% 100%;}
+.layer5{ background-image: url(../images/q4-bg.jpg); background-size: 100% 100%;}
+.layer6{ background-image: url(../images/q5-bg.jpg); background-size: 100% 100%;}
+.layer7{ background-image: url(../images/q6-bg.jpg); background-size: 100% 100%;}
+.layer8{ background-image: url(../images/q7-bg.jpg); background-size: 100% 100%;}
+.layer9{ background-image: url(../images/q8-bg.jpg); background-size: 100% 100%;}
+.layer10{ background-image: url(../images/q9-bg.jpg); background-size: 100% 100%;}
+.layer11{ background-image: url(../images/q10-bg.jpg); background-size: 100% 100%;}
+.layer12{ background-image: url(../img/bg0.jpg); background-size: 100% 100%;}
+.layer12 .dtext{width: 270px; height: 270px; position: absolute; top: 25%; left: 50%; margin-left: -140px;}
+.layer12 .dtext div{width: 100%; height: 100%; background-size: 100% 100%;}
+
+
+.anserea
+{width: 363px;
+ height: 278px; 
+ position: absolute;
+  bottom: 9.2%;
+  left: 50%; 
+  margin-left:-181px; 
+  font-size: 22px;}
+
+
+.line{
+  background-image:url(../images/line.png);
+  position: relative;
+  left: 0%;
+  top: 0%;
+  width: 60px;
+  height: 50px;
+  z-index: 2;
+}
+
+.quetext {
+
+  z-index: 2;
+   animation: bounceIn 1.5s linear 1;
+   -webkit-animation: bounceIn 1.5s linear 1;
+   background-size: 100% 100%;
+   position: absolute;
+    top: 0%;
+    left: 0%;
+    margin-left: 2.5rem;
+    margin-top: 0.1rem;
+}
+
+.answer {
+ 
+   background-size: 100% 100%;
+   position: absolute;
+    top: 0%;
+    left: 0%;
+    margin-left: 2.5rem;
+    margin-top: 0.1rem;
+}
+
+
+
+.snow {
+  width: 28px;
+  height: 40px;
+  background-image: url(../images/snow1.png);
+   background-size: 100% 100%;
+   position: absolute;
+    top: 0%;
+    left: 0%;
+    margin-left: 0rem;
+    margin-top: 0.1rem;
+}
+
+   @-webkit-keyframes xuanzhuan {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    25% {
+        -webkit-transform: rotate(90deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+    }
+    75% {
+        -webkit-transform: rotate(270deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+
