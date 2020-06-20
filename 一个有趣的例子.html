@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>一个有趣的例子</title>
+	<style>	
+	div{
+		width: 300px;
+		height: 500px;
+		border:1px solid #ccc;
+		float: left;
+		margin-left: -1px; /* 加上这句话以后就可以实现左边的边框盖住右边的边框了 这样就都是1px的粗细了 */
+		position: relative; 
+		/* 在没有特殊说明的情况之下 默认的z-index的值是0 */
+	}
+	div:hover{
+		/* 想实现鼠标经过的时候改变边框颜色的操作 */
+		border: 1px solid #f40; /* 发现如果只写这么一句 因为之前右边边框被盖住而显示不出颜色 但是因为它没定位 所以不能加z-index */
+		/* position: relative; */ /* 加一个相对定位就可以 因为相对定位是比标准流高一级 悬浮在上面的 */
+
+		/* 另外一种情况 如果div在开始的时候就有相对定位呢 这样我们就可以在鼠标经过的时候加上z-index了 */
+		z-index: 1;
+	}
+	</style>
+</head>
+<body>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+</body>
+</html>
